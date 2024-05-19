@@ -1,0 +1,11 @@
+name: SudoForce
+version: '${project.version}'
+main: me.zombieman.dev.sudoforce.SudoForce
+api-version: '1.20'
+
+commands:
+  sudoforce:
+    aliases:
+      - sudo
+      - sf
+    permission: sudoforce.command.sudoforce
