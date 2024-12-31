@@ -103,8 +103,8 @@ public class SudoCommand  implements CommandExecutor, TabCompleter {
             }
         }
 
-        String lastArg = args[args.length - 1];
-        return completions.stream().filter(s -> s.startsWith(lastArg)).collect(Collectors.toList());
+        String lastArg = args[args.length - 1].toLowerCase();
+        return completions.stream().filter(s -> s.toLowerCase().startsWith(lastArg)).collect(Collectors.toList());
     }
 
     public void messageOrCommand(Player sender, Player player, String str) {
